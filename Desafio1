@@ -1,0 +1,12 @@
+def zetadieta(C, P, G):
+    bananas = (C + 26) // 27  
+    tuna = (P + 29) // 30  
+    oil = G
+    calories = bananas * 105 + tuna * 120 + oil * 9
+    return calories
+C = int(input("Ingrese la cantidad de carbohidratos (C) en gramos: "))
+P = int(input("Ingrese la cantidad de proteínas (P) en gramos: "))
+G = int(input("Ingrese la cantidad de grasas (G) en gramos: "))
+
+total_calories=zetadieta(C, P, G)
+print(f"La cantidad total de calorías ingeridas es: {total_calories}")
